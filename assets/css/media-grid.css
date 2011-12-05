@@ -1,0 +1,145 @@
+/* 
+	A really very light framework for responsive layouts heavily based on - http://twitter.github.com/bootstrap and http://www.getskeleton.com/.
+	This framework only provides the basics and builds upon a better grid system (IE7+) and reduced code.
+	It also includes base.css and typography.css that can be used to reset styles and create a consistent baseline.
+*/
+
+/* Global elements */
+.container 					{ width: 940px; margin-left: auto; margin-right: auto; zoom: 1; }
+.row 				 		{ zoom: 1; margin-left: -20px; }
+[class*="as_grid"]	 		{ display: inline; float: left; margin-left: 20px; }
+.row > hgroup 				{ margin-left:20px; width: 940px; }
+
+/* Desktops 960px plus */
+	.as_grid1  		{ width: 40px;  }
+	.as_grid2  		{ width: 100px; }
+	.as_grid3  		{ width: 160px; }
+	.as_grid4  		{ width: 220px; }
+	.as_grid5  		{ width: 280px; }
+	.as_grid6  		{ width: 340px; }
+	.as_grid7  		{ width: 400px; }
+	.as_grid8  		{ width: 460px; }
+	.as_grid9  		{ width: 520px; }
+	.as_grid10 		{ width: 580px; }
+	.as_grid11 		{ width: 640px; }
+	.as_grid12 		{ width: 700px; }
+	.as_grid13 		{ width: 760px; }
+	.as_grid14 		{ width: 820px; }
+	.as_grid15 		{ width: 880px; }
+	.as_grid16 		{ width: 940px; }
+.as_gridthird  		{ width: 300px; }
+.as_gridtwothirds 	{ width: 620px; }
+
+	.push1     { margin-left: 60px;  }
+	.push2     { margin-left: 120px; }
+	.push3     { margin-left: 180px; }
+	.push4     { margin-left: 240px; }
+	.push5     { margin-left: 300px; }
+	.push6     { margin-left: 360px; }
+	.push7     { margin-left: 420px; }
+	.push8     { margin-left: 480px; }
+	.push9     { margin-left: 540px; }
+	.push10    { margin-left: 600px; }
+	.push11    { margin-left: 660px; }
+	.push12    { margin-left: 720px; }
+	.push13    { margin-left: 780px; }
+	.push14    { margin-left: 840px; }
+	.push15    { margin-left: 900px; }
+.pushthird     { margin-left: 340px; }
+.pushtwothirds { margin-left: 660px; }
+
+
+/* Tablets and screens lower than 960px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container  		{ width: 768px; }
+	.row > hgroup 		{ width: 748px; }
+	.as_grid1			{ width: 28px; }
+	.as_grid2   		{ width: 76px; }
+	.as_grid3   		{ width: 124px; }
+	.as_grid4 			{ width: 172px; }
+	.as_grid5   		{ width: 220px; }
+	.as_grid6   		{ width: 268px; }
+	.as_grid7			{ width: 316px; }
+	.as_grid8			{ width: 364px; }
+	.as_grid9			{ width: 412px; }
+	.as_grid10  		{ width: 460px; }
+	.as_grid11  		{ width: 508px; }
+	.as_grid12			{ width: 556px; }
+	.as_grid13  		{ width: 604px; }
+	.as_grid14  		{ width: 652px; }
+	.as_grid15  		{ width: 700px; }
+	.as_grid16  		{ width: 748px; }
+.as_gridthird  			{ width: 238px; }
+.as_gridtwothirds 		{ width: 488px; }
+
+	.push1     			{ margin-left: 48px;  }
+	.push2    			{ margin-left: 96px; }
+	.push3     			{ margin-left: 144px; }
+	.push4     			{ margin-left: 192px; }
+	.push5    			{ margin-left: 240px; }
+	.push6     			{ margin-left: 288px; }
+	.push7     			{ margin-left: 336px; }
+	.push8     			{ margin-left: 348px; }
+	.push9     			{ margin-left: 432px; }
+	.push10    			{ margin-left: 480px; }
+	.push11    			{ margin-left: 528px; }
+	.push12    			{ margin-left: 576px; }
+	.push13    			{ margin-left: 624px; }
+	.push14    			{ margin-left: 672px; }
+	.push15    			{ margin-left: 720px; }
+.pushthird     			{ margin-left: 280px; }
+.pushtwothirds 			{ margin-left: 528px; }
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	[class*="as_grid"], 
+	.row > hgroup,
+	[class*="push"] { 
+		margin-left:0; 
+		margin-right:0; 
+	}
+	.row { 
+		margin-left:0; 
+	}
+	[class*="as_grid"] {
+		margin-bottom: 1.375em; 
+	}
+}
+
+/* Mobile in Portrait */
+@media only screen and (max-width: 767px) {  
+	 .container, 
+	 .row > hgroup,
+	 [class*="as_grid"], 
+	 [class*="push"] { 
+		 width: 300px; 
+	}
+}
+
+/* Mobile in Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container, 
+	.row > hgroup,
+	[class*="as_grid"], 
+	[class*="push"] {
+		 width: 420px; 
+	}
+}
+
+/*************************************************************************************************/
+
+/*Images*/
+.max_width_image, figure img { max-width: 100%; height: auto; display:block; margin-top:1.375em; }
+
+/*Clearing*/
+.row:before, .row:after, 
+.clearfix:before, .clearfix:after, 
+.container:before, .container:after { 
+	display: table; content: ""; zoom: 1; *display: inline; 
+}
+.row:after, .container:after, .clearfix:after { clear: both; }
+
+/* Row spacing */
+.row, hgroup { margin-bottom: 1.375em; }

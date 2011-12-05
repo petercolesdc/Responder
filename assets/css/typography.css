@@ -1,0 +1,27 @@
+/* Basic type and baseline set-up 
+- 16px (100%) base text size with 22px (1.375em) line-height 
+- You can, if you wish move this into a global stylesheet */
+/* ---------------------------------------------------------- */
+
+/*Headings*/
+h1  		{ letter-spacing: -1px; font-weight: 900; }
+h4, h5 		{ font-weight: 700; }
+h6 			{ text-transform: uppercase; letter-spacing:2px; font-weight: 700;}
+
+h1			{ font-size: 2.000em; margin-top:0.6875em; line-height:0.6875em; } 	/*32px*/
+h2			{ font-size: 1.750em; margin-top:0.7857em; line-height:0.7857em; } 	/*28px*/
+h3			{ font-size: 1.500em; margin-top:0.9166em; line-height:0.9166em; } 	/*24px*/
+h4			{ font-size: 1.375em; margin-top:1.0000em; line-height:1.0000em; } 	/*22px*/
+h5			{ font-size: 1.188em; margin-top:1.1578em; line-height:1.1578em; } 	/*19px*/
+h6			{ font-size: 0.813em; margin-top:1.6923em; line-height:1.6923em; }  /*13px*/
+
+/*Copy*/
+p, li		{ font-size: 1.000em; margin-top: 1.3750em; line-height:1.3750em; } /*16px*/
+small 		{ font-size: 0.813em; margin-top: 1.6923em; line-height:1.6923em; } /*13px*/
+li			{ margin-top: 0; }
+ol, ul 		{ margin-top: 1.375em; list-style-position: inside; }
+ul 			{ list-style-type: square; }
+ol 			{ list-style-type: decimal; }
+
+/*Tweaks*/
+p, li { width:95%; } /*Stop copy running right up to the edge for better spacing*/

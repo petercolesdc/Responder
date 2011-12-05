@@ -1,0 +1,31 @@
+/* ---------------------------------------------------------- 
+
+Globaly layout styles here. 
+Try and keep width agnostic as much as possible 
+
+------------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900);
+
+html { overflow-x:hidden; /* Hide scrollbars on resize */ }
+
+body { 
+	font-size:100%; 
+	line-height:1; 
+	font-family: 'Lato', Helvetica, Arial, Sans-Serif; 
+	color:#808080; 
+	background:#fff;
+}
+
+h1, h2, h3, h4, h5, h6  { color:#404040; }
+.container 	{ background:#fff; }
+
+@media only screen and (min-width: 1000px) {
+	body {
+		background:#eee;
+	}
+	/* Padding takes total width up to 1000px */
+	.container {
+		padding:0 30px;
+	}
+}
