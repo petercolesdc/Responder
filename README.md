@@ -3,4 +3,4 @@
 
 <h1>To use</h1>
 <p>Simply include the media-grid into your html pages and refer to the class names for general grid layout. Then add the rest of your site styles into screen.css. That's it.</p>
-<p>The framework provides a base stylesheet to reset and provide global starting points and a typography stylesheet that sets a sensible baseline.</p>
+<p>The framework provides a base stylesheet to reset and provide global starting points and a typography stylesheet that sets a sensible baseline. You don't have to use these.</p>
