@@ -51,7 +51,7 @@
 
 /* Tablets and screens lower than 960px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	.container  		{ width: 768px; left:10px; position:relative; } /* Kind of found it annoying too near the right edge, so push it out a bit */
+	.container  		{ width: 768px; left:10px; position:relative; } /* Annoying too near the left edge, so push it out a bit with cheating */
 	.row > hgroup 		{ width: 748px; }
 	.as_grid1			{ width: 28px; }
 	.as_grid2   		{ width: 76px; }
