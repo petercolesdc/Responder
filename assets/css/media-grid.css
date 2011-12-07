@@ -131,7 +131,7 @@
 /*************************************************************************************************/
 
 /*Images*/
-.max_width_image, figure img { max-width: 100%; height: auto; display:block; margin-top:1.375em; }
+.max_width_image, figure img { max-width: 100%; height: auto; display:block; }
 
 /*Clearing*/
 .row:before, .row:after, 
