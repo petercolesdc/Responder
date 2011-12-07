@@ -7,7 +7,9 @@ Try and keep width agnostic as much as possible
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900);
 
-html { overflow-x:hidden; /* Hide scrollbars on resize */ }
+html { 
+	overflow-x:hidden; /* Hide scrollbars on resize */ 
+}
 
 body { 
 	font-size:100%; 
@@ -17,9 +19,6 @@ body {
 	background:#fff;
 }
 
-h1, h2, h3, h4, h5, h6  { color:#404040; }
-.container 	{ background:#fff; }
-
 @media only screen and (min-width: 1000px) {
 	body {
 		background:#eee;
@@ -28,4 +27,58 @@ h1, h2, h3, h4, h5, h6  { color:#404040; }
 	.container {
 		padding:0 30px;
 	}
+}
+
+/* Default container colour */
+.container 	{ 
+	background:#fff; 
+}
+
+/* Global Header Colours */
+h1, h2, h3, h4, h5, h6  { 
+	color:#404040; 
+}
+
+/* Row spacing */
+.row, hgroup { margin-bottom: 1.375em; }
+
+
+/* Images */
+.max_width_image, figure img {  
+	margin-top:1.375em; 
+}
+
+
+/* ---------------------------------------------------------- 
+
+Extra helper classes - use if needed.
+
+------------------------------------------------------------- */
+
+/* Hide things */
+.hide, .hidefromiphone, .hidefromphone, .hidefromipad, .hidefromtablet .hidefromdesktop {
+	display: none;
+	height: 0;
+	text-indent: -999em;
+}
+
+/* Hand bullet outside */
+.hangbullet {
+	list-style-position: outside;
+}
+
+/* Uppercase */
+.case_up {
+	text-transform: uppercase;
+	letter-spacing: 2px; /* I like to kern my uppercase text a bit */
+}
+
+/* Lowercase */
+.case_low {
+	text-transform: lowercase;
+}
+
+/* Case reset */
+.case_reset {
+	text-transform: capitalize;
 }

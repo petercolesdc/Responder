@@ -140,6 +140,3 @@
 	display: table; content: ""; zoom: 1; *display: inline; 
 }
 .row:after, .container:after, .clearfix:after { clear: both; }
-
-/* Row spacing */
-.row, hgroup { margin-bottom: 1.375em; }

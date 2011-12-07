@@ -2,7 +2,6 @@
 /* ---------------------------------------------------------- */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, figure, p, blockquote, th, td { margin: 0; padding: 0; }
 table { border-collapse: collapse; border-spacing: 0; }
-th { text-align: left; }
 fieldset, img { border: 0; }
 address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
 ol, ul { list-style: none; }
@@ -14,7 +13,7 @@ header, footer, section, article, nav, menu, figure, figcaption, aside, hgroup {
 img { border: 0; -ms-interpolation-mode: bicubic; image-rendering: optimizeQuality; }
 
 
-/*Nicer type out of the box */
+/* Nicer type out of the box */
 /* ---------------------------------------------------------- */
 body      { font-kerning: normal; text-rendering: optimizeLegibility; -webkit-text-size-adjust: none; }
 a         { word-wrap: break-word; }
